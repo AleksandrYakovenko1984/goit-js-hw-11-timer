@@ -1,6 +1,11 @@
 import refs from './refs.js'
 const { days, hours, mins, secs } = refs
 
+
+
+
+
+
 class CountdownTimer{
     constructor(finishDate, markup) {
         this.markup = markup
@@ -26,7 +31,7 @@ class CountdownTimer{
             const mins =this.pad(Math.floor(this.deltaTime % (1000 * 60 * 60) / (1000 * 60)))  
             
             console.log('mins:', mins);
-            const secs = this.pad(Math.floor(this.deltaTime % (1000 * 60) / (1000))  )
+            const secs = this.pad(Math.floor((this.deltaTime % (1000 * 60)) / 1000)  )
 
             // console.log('days:', days);
             // console.log('hours:', hours);
@@ -41,7 +46,7 @@ class CountdownTimer{
         clearInterval(this.intervalId)
     }
     pad(value){
-return String(value).padStart(2, '-')
+return String(value).padStart(2, '0')
     }
     insertValues(d, h, m, s) {
         const { days, hours, mins, secs } = this.markup
