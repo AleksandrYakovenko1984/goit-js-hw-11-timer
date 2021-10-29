@@ -1,23 +1,27 @@
 .timer {
   font-family: Roboto, sans-serif;
-  font-size: 30px;
+  font-size: 40px;
 
   display: flex;
   justify-content: space-around;
-  background-color: beige;
+  background-color: slategrey;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .field {
-  transform-style: preserve-3d;
   display: flex;
   flex-direction: column;
 }
 .value {
-  color: olive;
   text-align: center;
+  color: #ffffff;
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
 }
 .label {
   text-align: center;
-  color: goldenrod;
+
+  color: #ffffff;
+  color: #ffffff;
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
 }
